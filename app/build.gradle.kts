@@ -27,14 +27,15 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 }
-
 dependencies {
-
-    implementation(libs.appcompat)
+    implementation(libs.androidx.appcompat)  // Ensure this line exists
     implementation(libs.material)
-    implementation(libs.activity)
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Glide for image loading
+    implementation(libs.glide)
+    annotationProcessor(libs.glide.compiler)
 }

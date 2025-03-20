@@ -2,32 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="8dp">
 
-    <!-- Movie Title -->
-    <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:text="Movie Title" />
+    <!-- Movie Poster -->
+    <ImageView
+        android:id="@+id/posterImageView"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Movie Poster" />
 
-    <!-- Movie Year -->
-    <TextView
-        android:id="@+id/yearTextView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="Year: 2000" />
+        android:orientation="vertical"
+        android:padding="8dp">
 
-    <!-- Movie Genre -->
-    <TextView
-        android:id="@+id/genreTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="Genre: Action" />
+        <!-- Movie Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Movie Title" />
 
+        <!-- Movie Year -->
+        <TextView
+            android:id="@+id/yearTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Year: 2000" />
+
+        <!-- Movie Genre -->
+        <TextView
+            android:id="@+id/genreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Genre: Action" />
+    </LinearLayout>
 </LinearLayout>
